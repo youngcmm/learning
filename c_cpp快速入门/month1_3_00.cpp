@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 //#define pi 3.14
 const double pi = 3.14;
