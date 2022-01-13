@@ -1,0 +1,154 @@
+////3.4日期处理
+#include<stdio.h>
+#include<string.h>
+//int month[13][2]={
+//    {0,0},{31,31},{28,29},{31,31},{30,30},{31,31},{30,30},{31,31},{31,31},{30,30},{31,31},{30,30},{31,31}
+//    };
+//bool isleapyear(int year)
+//{
+//    return ((year%4 == 0)&&(year%100!=0))||(year%400 == 0);
+//}
+//int main()
+//{
+//  int time1,y1,m1,d1;
+//  int time2,y2,m2,d2;
+//  while(scanf("%d%d",&time1,&time2) != EOF)
+//  {
+//      if(time1>time2)
+//      {
+//          int temp = time1;
+//          time1 = time2 ;
+//          time2 = temp;
+//      }
+//        y1 = time1/10000,m1 = time1%10000/100,d1 = time1%100;
+//        y2 = time2/10000,m2 = time2%10000/100,d2 = time2%100;
+//        int ans = 1;
+//        while((y1<y2)||(m1<m2)||(d1<d2))
+//    {
+//        d1++;
+//        if(d1 == month[m1][isleapyear(y1)]+1)
+//        {
+//            m1++;
+//            d1=1;
+//        }
+//        if(m1 = 13)
+//        {
+//            y1++;
+//            m1 = 1;
+//        }
+//        ans++;
+//    }
+//    printf("%d\n",ans);
+//  }
+//return 0;
+//}
+//3.5进制转化
+//int main()
+//{
+//p进制的X转化为十进制的Y
+//int x = 101;
+//int p = 2;
+//int y = 0,product = 1;
+//while( x != 0)
+//{
+//    y = y+(x%10)*product;
+//    product = product*p;
+//    x = x/10;
+//
+//}
+//十进制的x转化为p进制的y
+//int z[40] = {0};
+//int num = 0;
+//do{
+//    z[num++] = x%p;
+//    x = x/p;
+//}while(x!=0);
+//for(int i = 8;i>=0;i--)
+//printf("%d\t",z[i]);
+//D进制的A+B
+//int a,b,d;
+//int a1=0,b1=0,c1 = 0;
+//int product1=1,product2 = 1;
+//scanf("%d %d %d",&a,&b,&d);
+//while( a!=0)
+//{
+//    a1 = a1+a%10*product1;
+//    product1 = product1*d;
+//    a = a/10;
+//}
+//printf("%d\n",a1);
+//while( b!=0)
+//{
+//    b1 = b1+b%10*product2;
+//    product2 = product2*d;
+//    b = b/10;
+//}
+//c1 = a1+b1;
+//int c[40]={0};
+//int num = 0;
+//do{
+//    c[num++] = c1%d;
+//    c1 = c1/d;
+//}while(c1!=0);
+//for(int i = 39;i>=0;i--)
+//printf("%d ",c[i]);
+//return 0;
+//}
+//3.6字符串处理
+//回文字符串
+//const int Maxnumber = 256;
+//bool judge(char s[])
+//{
+//    int len = strlen(s);
+//    for(int i = 0;i < len/2 ; i++)
+//    {
+//        if(s[i] != s[len-i-1])
+//        {
+//            return false;
+//            break;
+//        }
+//    }
+//    return true;
+//
+//}
+//int main()
+//{
+//    char str[Maxnumber];
+//    while(gets(str))
+//    {
+//        bool flag = judge(str);
+//        if(flag == true)
+//        {
+//            printf("YES\n");
+//        }
+//        else printf("NO\n");
+//    }
+//    return 0;
+//}
+//说反话
+int main()
+{
+//    char s[90];
+//    gets(s);
+//    char ans[90][90];
+//    int row = 0,col = 0;
+//    int len = strlen(s);
+//    for(int i = 0; i < len ;i++)
+//    {
+//        if(s[i] != ' ')
+//        ans[row][col++] = s[i];
+//        else
+//        {
+//            ans[row][col] = '\0';
+//            row++;
+//            col = 0; //重要！！！将列还原
+//        }
+//    }
+//    for(int i = row; i >= 0; i--)
+//    {
+//     printf("%s",ans[i]);
+//     if(i>0)
+//     printf(" ");
+//    }
+    return 0;
+}
